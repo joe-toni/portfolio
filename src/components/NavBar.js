@@ -4,11 +4,12 @@ import React from 'react'
 export default function NavBar(){
     return(
         <>
-            <header className="bg-gray-800">
-                <a className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"> Home</a>
-                <a>About Me</a>
-                <a>Projects</a>
-            </header>
+            <header className=" flex  place-content-start place-items-center h-10 bg-gray-800 p-1 space-x-[5px]
+            [&>*]:bg-white [&>*]:rounded [&>*:hover]:bg-sky-500  [&>*]:w-1/6 [&>*]:text-center">
+                <a class="slidingLightBg"> Home</a>
+                <a class="slidingLightBg">About Me</a>
+                <a class="slidingLightBg">Projects</a>           
+             </header>
         </>
         )
     }

@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components
+{
+    .slidingLightBg
+    {
+        background-size: 600%;
+        background-position: right;
+        background-image: linear-gradient(to right, rgb(34 211 238), rgb(103 232 249), rgb(30 64 175),rgb(29 78 216) );
+        transition-duration: 800ms;
+    }
+    .slidingLightBg:hover
+    {
+        background-position: left;
+    }
+ } 
